@@ -1,0 +1,30 @@
+<mat-sidenav-container>
+  <mat-sidenav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="img-container">
+      <mat-icon>score</mat-icon><br><br>
+      <span class="name">Paz Y Salvo</span> <br>
+      <span class="desc">Sistema de gestión de facturas.</span>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="options-container">
+        <button mat-button id="btnHome">
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+        </button>
+        <button mat-button id="btnFacturas"  *ngIf="isAdmin" (click)="navegarFacturas()">
+          <mat-icon>list_alt</mat-icon>
+          <span>Facturas</span>
+        </button>
+
+    </div>
+    <mat-divider></mat-divider>
+    <div class="help-container">
+      <button mat-button class="menu-btn">
+        <mat-icon>contact_support</mat-icon>
+        <span>Soporte</span>
+      </button>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h2>Formulario de Factura</h2>
+      <p class="lead">Por favor, complete los siguientes campos para crear una nueva factura.</p>
+      <hr>
+      <form [formGroup]="facturaForm" (ngSubmit)="guardarFactura()">
+        <div class="form-group row">
+          <label for="saldo" class="col-sm-3 col-form-label">Saldo:</label>
+          <div class="col-sm-9">
+            <input formControlName="saldo" type="number" class="form-control" id="saldo" placeholder="Ingrese el saldo">
+          </div>
+        </div><br/>
+        <div class="form-group row">
+          <label for="clienteId" class="col-sm-3 col-form-label">Cliente ID:</label>
+          <div class="col-sm-9">
+            <input formControlName="clienteId" type="number" class="form-control" id="clienteId" placeholder="Ingrese el ID del cliente">
+          </div>
+        </div><br/>
+        <div class="form-group row">
+          <label for="servicioAdquiridoId" class="col-sm-3 col-form-label">Servicio Adquirido ID:</label>
+          <div class="col-sm-9">
+            <input formControlName="servicioAdquiridoId" type="number" class="form-control" id="servicioAdquiridoId" placeholder="Ingrese el ID del servicio adquirido">
+          </div>
+        </div><br/>
+        <div class="form-group row">
+          <label for="medioDePagoId" class="col-sm-3 col-form-label">Medio de Pago ID:</label>
+          <div class="col-sm-9">
+            <input formControlName="medioDePagoId" type="number" class="form-control" id="medioDePagoId" placeholder="Ingrese el ID del medio de pago">
+          </div>
+        </div><br/>
+        <div class="form-group row">
+          <label for="estadoId" class="col-sm-3 col-form-label">Estado ID:</label>
+          <div class="col-sm-9">
+            <input formControlName="estadoId" type="number" class="form-control" id="estadoId" placeholder="Ingrese el ID del estado">
+          </div>
+        </div><br/><hr>
+        <div class="form-group row">
+          <div class="col-sm-12 text-center">
+            <button type="submit" class="btn btn-primary btn-lg" style="background: linear-gradient(to right, #68217a, #8a2be2); border: none;">Guardar</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>

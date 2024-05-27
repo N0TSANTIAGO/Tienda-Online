@@ -1,0 +1,38 @@
+<div class="factura-container">
+  <div class="desc-container">
+    <h2>Administrador de facturas</h2>
+    <p class="descripcion">
+        Este administrador nos permite visualizar y gestionar todo lo referente a las Facturas del negocio.
+    </p>
+  </div>
+  <div class="buttons-container">
+    <button class="btn btn-outline-primary" (click)="navegarNuevaFactura()">Nuevo</button>
+  </div>
+
+  <hr>
+  <table class="table table-hover">
+    <thead class="">
+      <tr>
+        <th>Saldo</th>
+        <th>Cliente</th>
+        <th>Servicio</th>
+        <th>Medio de pago</th>
+        <th>Estado</th>
+        <th>Opciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let factura of dataSource">
+        <td>{{ factura.saldo }}</td>
+        <td>{{ factura.clienteId }}</td>
+        <td>{{ factura.servicioAdquiridoId }}</td>
+        <td>{{ factura.medioDePagoId }}</td>
+        <td>{{ factura.estadoId }}</td>
+        <td>
+          <a href="" class="btn btn-outline-success">Editar</a> |
+          <a href="" class="btn btn-outline-warning">Eliminar</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

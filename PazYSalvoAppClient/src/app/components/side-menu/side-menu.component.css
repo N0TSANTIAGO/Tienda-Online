@@ -1,0 +1,29 @@
+mat-sidenav-container{
+  height: 90vh;
+  width: 100%;
+  margin-top: 1rem;
+  border-right: none;
+  border-radius: 1rem;
+  background: linear-gradient(to right, #6e1164,#6e0003);
+  color: whitesmoke;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-options{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.menu-options button{
+  color: whitesmoke;
+  border: none;
+  background: transparent;
+}
+button:hover{
+  cursor: pointer;
+}

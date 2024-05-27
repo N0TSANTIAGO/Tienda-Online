@@ -1,0 +1,12 @@
+
+<app-navbar (loginClick)="openLoginModal()"></app-navbar>
+<div class="content-container">
+
+  <div class="sidenav-container">
+
+    <app-side-menu (loginSuccess)="onLoginSuccess($event)"></app-side-menu>
+  </div>
+  <div class="content">
+  <router-outlet></router-outlet>
+  </div>
+</div>
