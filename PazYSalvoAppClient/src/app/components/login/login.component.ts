@@ -52,17 +52,11 @@ export class LoginComponent {
   }
 
   login(): void {
-    // Validar el usuario y la contraseña
     if (this.loginForm.valid) {
       const username = this.loginForm.value.username;
       const password = this.loginForm.value.password;
       console.log('Nombre de usuario:', username);
       console.log('Contraseña:', password);
-      /*
-      1- enviar las credenciales a un servicio de autenticación
-      2- Ejecutar consulta a BD
-      3- Retorno el resultado
-      */
     if (username === 'admin' && password === 'admin') {
       alert('Inicio de sesión exitoso como ' + username);
       this.sharedService.setAdmin(!this.isAdmin);

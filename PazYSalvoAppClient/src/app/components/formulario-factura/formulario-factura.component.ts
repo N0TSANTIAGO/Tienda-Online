@@ -24,7 +24,6 @@ export class FormularioFacturaComponent {
   constructor(
     private fb: FormBuilder,
   ) {
-    // Asigna los campo como obligatorios
     this.facturaForm = this.fb.group({
       saldo: ['', Validators.required],
       clienteId: ['', Validators.required],

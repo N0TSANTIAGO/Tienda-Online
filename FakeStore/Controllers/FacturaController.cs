@@ -8,16 +8,15 @@ namespace FakeStore.Controllers
 {
     [Route("api/[controller]")] 
     [ApiController]
-
     public class FacturaController : ControllerBase
     { 
         private readonly FacturaService _facturaService;
-
+        
         public FacturaController(FacturaService facturaService)
         {
             _facturaService = facturaService;
         }
-   
+
         [HttpGet]
         public async Task<IActionResult> GetFacturas()
         {
